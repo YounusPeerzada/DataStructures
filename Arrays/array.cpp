@@ -8,6 +8,7 @@ int main (){
     // marks[3]= 77;
     // marks[4]= 98;
     // cout<<marks[2];
+    // marks
 
 //     int marks[3]= {65,43,12};
 //     cout<<marks[2];
