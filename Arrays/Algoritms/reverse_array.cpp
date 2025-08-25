@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void reverse(int arr[], int start, int end) {
+void reverse(int arr[], int size) {
+    int start = 0;
+    int end = size - 1;
+
     while (start < end) {
         swap(arr[start], arr[end]);
         start++;
@@ -10,14 +13,12 @@ void reverse(int arr[], int start, int end) {
 }
 
 int main() {
-    int arr[] = {78, 89, 98, 67, 45, 76, 88, 80};
-    int size = 8;
-    int start = 0;
-    int end = 7;
+    int arr[] = {78, 89, 98, 67, 45, 76, 88, 80, 90};
+    int sz = 9;
 
-    reverse(arr, start, end);
+    reverse(arr, sz);
 
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < sz; i++) {
         cout << arr[i] << " ";
     }
 
