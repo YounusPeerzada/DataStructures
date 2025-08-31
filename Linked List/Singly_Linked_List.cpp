@@ -83,13 +83,19 @@ class List {
     }
 
     void printLL() {
+        if (head == NULL) {
+            cout << "Linked List is empty\n";
+            return;
+        }
+
         Node* temp = head;
 
         while (temp != NULL) {
             cout << temp->data << " ";
+
             temp = temp->next;
         }
-
+        
         cout << endl;
     }
 };
