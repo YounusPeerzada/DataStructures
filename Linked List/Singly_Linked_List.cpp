@@ -12,12 +12,12 @@ class Node {
     }
 };
 
-class List {
+class SinglyList {
     Node* head;
     Node* tail;
 
    public:
-    List() {
+    SinglyList() {
         head = tail = NULL; 
     }
 
@@ -38,10 +38,11 @@ class List {
 
         if (tail == NULL) {
             head = tail = newNode;
-        } else {
-            tail->next = newNode;
-            tail = newNode;
+            return;
         }
+        
+        tail->next = newNode;
+        tail = newNode;
     }
 
     void pop_front() {
@@ -100,7 +101,7 @@ class List {
 };
 
 int main() {
-    List ll;
+    SinglyList ll;
 
     ll.push_back(3);
     ll.push_back(4);
