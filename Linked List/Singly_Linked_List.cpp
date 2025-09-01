@@ -46,7 +46,6 @@ class List {
 
     void pop_front() {
         if (head == NULL) {
-            cout << "Linked list is empty";
             return;
         }
 
@@ -84,7 +83,7 @@ class List {
 
     void printLL() {
         if (head == NULL) {
-            cout << "Linked List is empty\n";
+            cout << "Linked List is empty\n";        
             return;
         }
 
@@ -95,7 +94,7 @@ class List {
 
             temp = temp->next;
         }
-        
+
         cout << endl;
     }
 };
